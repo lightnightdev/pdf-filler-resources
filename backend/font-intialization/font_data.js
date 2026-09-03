@@ -3,7 +3,7 @@ function initFontBytes() {
     return FONT_BYTES;
   }
 
-  // TO DO: rethink variable scope
+  // #TODO: rethink variable scope
   window.FONT_BYTES = {
     _signature: b64ToU8(SIGNATURE_OTF_B64),
     _normal: b64ToU8(CREATO_REG_OTF_B64),
@@ -44,7 +44,7 @@ AAEAAAAQAQAABAAAR0RFRgSHCHMAAAGQAAAAPEdTVUL+MPU1AAAI9AAAA85PUy8ycMiKKAAAAcwAAABg
 //CourierPrime-Regular.ttf
 
 
-// TO DO: Write function to extract these
+// #TODO: Write function to extract these from font bytes
 const FONT_STYPOASCENDERS = {
   "_signature": 781, // 781, -313
   "_normal": 804, // hhea 950, -238
@@ -87,8 +87,6 @@ function parseFont(input) {
     default: return "Unknown";
   }
 }
-
-
 
 
 function registerBase64Font(fontName, base64Data) {
